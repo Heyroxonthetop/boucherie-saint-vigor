@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boucherie Saint Vigor</title>
+<style>
+/* ---------------- GLOBAL ---------------- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* ---------------- HEADER ---------------- */
+header {
+  background-color: #8b0000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffddc1;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  background: url('https://images.openai.com/thumbnails/url/GjO2iXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw40KyzNSyksSA8uzCkwCo8oyc_Lr0h38nfydc_yydJ1DIjMM3UssLCojCoxCzEtj3B0d0r0MnBN9apUKwYA6zMpfw') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+.hero h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* ---------------- SECTIONS ---------------- */
+section {
+  padding: 60px 0;
+}
+h2.section-title {
+  text-align: center;
+  color: #8b0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* ---------------- QUALITÉS DES VIANDES ---------------- */
+#qualites-viandes ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+#qualites-viandes li {
+  background-color: #ffe6d1;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #8b0000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ---------------- GALERIE ---------------- */
+#galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+#galerie img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+#galerie img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- HORAIRES ---------------- */
+#horaires table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+#horaires th, #horaires td {
+  padding: 15px;
+  border: 1px solid #8b0000;
+}
+
+/* ---------------- CONTACT ---------------- */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8b0000;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #ff4444;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Boucherie Saint Vigor</h1>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#qualites-viandes">Qualités</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#horaires">Horaires</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <h2>La qualité de nos viandes, au cœur de votre assiette</h2>
+</section>
+
+<section id="qualites-viandes">
+  <div class="container">
+    <h2 class="section-title">Nos Qualités de Viandes</h2>
+    <p style="text-align:center; margin-bottom:40px;">À la Boucherie Saint Vigor, nous sélectionnons nos viandes avec soin pour vous offrir le meilleur :</p>
+    <ul>
+      <li><strong>Fraîcheur :</strong> Viandes toujours fraîches, issues de producteurs locaux.</li>
+      <li><strong>Qualité supérieure :</strong> Des morceaux tendres et savoureux, parfaits pour toutes vos recettes.</li>
+      <li><strong>Origine contrôlée :</strong> Traçabilité complète et respect des normes sanitaires.</li>
+      <li><strong>Saveur authentique :</strong> Goût naturel et riche, élevé sans additifs artificiels.</li>
+      <li><strong>Variété :</strong> Bœuf, porc, agneau et volailles, adaptés à toutes les préparations.</li>
+      <li><strong>Charcuterie maison :</strong> Produits préparés sur place avec savoir-faire artisanal.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="container">
+    <h2 class="section-title">Galerie</h2>
+    <div>
+      <img src="https://images.openai.com/thumbnails/url/ODxfunicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5MtkgNyzIuzTMuSE40CNR1NvJxT_M2K043MXQ3TQ-pCndydU8ODQrIi9TNMPGvMg51zjV0ywwJyctWKwYAoPIoGw" alt="Charcuterie maison">
+      <img src="https://images.openai.com/thumbnails/url/03zw4nicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4y9Un1djQqyknxS3EtzcgNrAyNT07K9PBOr9LNiKzSNco3LshJD3fJTYwydUkJ8U13No1MCck0cjFRKwYA0BopGA" alt="Viande fraîche">
+    </div>
+  </div>
+</section>
+
+<section id="horaires">
+  <div class="container">
+    <h2 class="section-title">Horaires d’ouverture</h2>
+    <table>
+      <tr><th>Jour</th><th>Heures</th></tr>
+      <tr><td>Lundi</td><td>Fermé</td></tr>
+      <tr><td>Mardi</td><td>8h00 – 12h45 / 14h30 – 19h30</td></tr>
+      <tr><td>Mercredi</td><td>8h00 – 12h45 / 14h30 – 19h30</td></tr>
+      <tr><td>Jeudi</td><td>8h00 – 12h45 / 14h30 – 19h30</td></tr>
+      <tr><td>Vendredi</td><td>8h00 – 12h45 / 14h30 – 19h30</td></tr>
+      <tr><td>Samedi</td><td>8h00 – 12h45 / 14h30 – 19h30</td></tr>
+      <tr><td>Dimanche</td><td>Fermé</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Boucherie Saint Vigor - 21 Place Saint Vigor, 61430 Athis-Val-de-Rouvre - Tel: 02 33 66 40 30</p>
+</footer>
+
+</body>
+</html>
