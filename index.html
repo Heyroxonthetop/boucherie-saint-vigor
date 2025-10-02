@@ -95,9 +95,11 @@ h2.section-title {
   gap: 15px;
 }
 #galerie img {
-  width: 100%;
+  max-width: 100%;    /* Ne dépasse jamais sa taille originale */
+  height: auto;       /* Respecte les proportions */
   border-radius: 10px;
   transition: transform 0.3s;
+  display: block;     /* Évite les petits espaces sous les images */
 }
 #galerie img:hover {
   transform: scale(1.05);
@@ -227,3 +229,4 @@ footer {
 
 </body>
 </html>
+
